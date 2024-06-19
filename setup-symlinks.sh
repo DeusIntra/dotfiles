@@ -1,9 +1,12 @@
 #!/usr/bin/bash
 
-files=(".bashrc" ".gitconfig")
+home_files=(".bashrc" ".gitconfig")
+home_dirs=(".themes" ".icons")
 dot_config_dirs=("nvim")
 
-for file in ${files[@]}; do
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+for file in ${home_files[@]}; do
   echo $file
   if [ -f $HOME/$file ] || [ -L $HOME/$file ]; then
     rm $HOME/$file
@@ -19,13 +22,24 @@ for directory in ${dot_config_dirs[@]}; do
     rm $dir_name
     echo removed $dir_name
   fi
-  ln -s $(pwd)/.config/$directory $dir_name
+  ln -s $SCRIPT_DIR/.config/$directory $dir_name
+  echo created soft link for $dir_name
+done
+
+
+for directory in ${home_dirs[@]}; do
+  dir_name=$HOME/$directory
+  if [ -d $dir_name ]; then
+    rm $dir_name
+    echo removed $dir_name
+  fi
+  ln -s $SCRIPT_DIR/$directory $dir_name
   echo created soft link for $dir_name
 done
 
 # exclude_list=("setup-symlinks.sh" ".git" ".gitignore")
 # 
-# files=$(ls -A)
+# home_files=$(ls -A)
 # 
 # is_excluded() {
 #   local item=$1
