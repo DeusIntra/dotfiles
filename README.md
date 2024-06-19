@@ -2,6 +2,9 @@
 
 ## Setup
 
+> **WARNING!**
+> Backup your **$HOME** directory
+
 Clone this repository (preferably in your **$HOME** directory) and run **setup-symlinks.sh**:
 
 ```bash
