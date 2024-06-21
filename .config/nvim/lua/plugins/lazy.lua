@@ -27,6 +27,5 @@ require("lazy").setup({
   { "saadparwaiz1/cmp_luasnip" },
   { "windwp/nvim-autopairs", event = "InsertEnter", opts = {} },
   "windwp/nvim-ts-autotag",
-  "uga-rosa/ccc.nvim",
 });
 

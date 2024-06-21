@@ -20,4 +20,3 @@ require("plugins/tokyonight-theme")
 
 require("plugins/snippets/luasnip")
 require("plugins/autotag")
-require("plugins/color-picker")
