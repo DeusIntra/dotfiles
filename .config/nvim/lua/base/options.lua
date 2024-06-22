@@ -1,4 +1,4 @@
-opt = vim.opt
+local opt = vim.opt
 
 opt.number = true
 opt.list = true
@@ -9,6 +9,10 @@ opt.shiftwidth = 2
 opt.expandtab = true
 
 opt.incsearch = true
-opt.hlsearch = false
+opt.hlsearch = true
 opt.ignorecase = true
 opt.smartcase = true
+
+opt.linebreak = true
+opt.clipboard = "unnamedplus"
+

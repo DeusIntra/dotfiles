@@ -13,10 +13,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require("plugins/lazy")
 require("plugins/treesitter")
-require("plugins/lualine")
-require("plugins/mason")
 require("plugins/lsp")
+require("plugins/lualine")
 require("plugins/tokyonight-theme")
-
 require("plugins/snippets/luasnip")
 require("plugins/autotag")
+require("plugins/comment")

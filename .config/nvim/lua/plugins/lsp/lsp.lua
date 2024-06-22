@@ -1,5 +1,5 @@
 local lspconfig = require("lspconfig")
-local lspList = require("plugins/lsp-list")
+local lspList = require("plugins/lsp/lsp-list")
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
