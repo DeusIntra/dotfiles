@@ -4,6 +4,7 @@ dotfiles=(
   ".bashrc"
   ".gitconfig"
   ".config/nvim"
+  ".config/xfce4"
   ".ssh/config"
   ".themes"
   ".icons"
