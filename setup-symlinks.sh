@@ -8,11 +8,17 @@ dotfiles=(
   ".ssh/config"
   ".themes"
   ".icons"
+  ".local/share/applications/nvim-terminal.desktop"
 )
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 for dotfile in ${dotfiles[@]}; do
+  dir_name=$(dirname $dotfile)
+  if [ ! -d $HOME/$dir_name ]; then
+    mkdir -p $HOME/$dir_name
+    echo created NEW directory $dir_name
+  fi
   if [ -L $HOME/$dotfile ]; then
     rm $HOME/$dotfile
   elif [ -e $HOME/$dotfile ]; then

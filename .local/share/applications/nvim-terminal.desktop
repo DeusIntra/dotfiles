@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Neovim (Terminal)
+GenericName=Text Editor
+Comment=Edit text files in the terminal with Neovim
+Exec=xfce4-terminal -e "nvim %f"
+Terminal=true
+Type=Application
+Categories=Utility;TextEditor;
+MimeType=text/plain;
