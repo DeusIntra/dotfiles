@@ -18,8 +18,8 @@
         <value type="int" value="7"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
-        <value type="int" value="6"/>
         <value type="int" value="5"/>
+        <value type="int" value="6"/>
         <value type="int" value="8"/>
         <value type="int" value="11"/>
         <value type="int" value="12"/>
@@ -62,6 +62,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “mts_router_030324” active: mts_router_030324 (93%)"/>
         <value type="string" value="no network connection"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="clipman"/>
@@ -70,6 +71,7 @@
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="firefox.instance_1_40"/>
     </property>
     <property name="plugin-11" type="string" value="separator">
       <property name="style" type="uint" value="0"/>

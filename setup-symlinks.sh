@@ -5,10 +5,12 @@ dotfiles=(
   ".gitconfig"
   ".config/nvim"
   ".config/xfce4"
+  ".config/Thunar"
   ".ssh/config"
   ".themes"
   ".icons"
   ".local/share/applications/nvim-terminal.desktop"
+  ".fonts"
 )
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
