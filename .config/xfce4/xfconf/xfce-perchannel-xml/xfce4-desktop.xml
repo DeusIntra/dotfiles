@@ -39,4 +39,8 @@
     <property name="window-width" type="int" value="628"/>
     <property name="window-height" type="int" value="550"/>
   </property>
+  <property name="desktop-menu" type="empty">
+    <property name="show" type="bool" value="true"/>
+    <property name="show-icons" type="bool" value="true"/>
+  </property>
 </channel>
