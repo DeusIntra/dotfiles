@@ -6,6 +6,7 @@ require("lazy").setup({
     "neovim/nvim-lspconfig",
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
+    "sindrets/diffview.nvim",
   {
     "onsails/lspkind.nvim",
     event = { "VimEnter" },
@@ -28,5 +29,13 @@ require("lazy").setup({
   { "windwp/nvim-autopairs", event = "InsertEnter", opts = {} },
   "windwp/nvim-ts-autotag",
   { 'numToStr/Comment.nvim', opts = {} },
+  {
+    "kylechui/nvim-surround",
+    version="*",
+    event="VeryLazy",
+    config = function()
+      require("nvim-surround").setup({})
+    end
+  },
 });
 
