@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=qBitTorrent
+GenericName=BitTorrent Client
+Comment=
+Exec=/opt/qbittorrent-4.6.5_x86_64.AppImage %f
+Terminal=false
+Type=Application
+Categories=Utility;
+MimeType=application/x-bittorrent
