@@ -46,3 +46,9 @@ lspconfig.tsserver.setup {
 lspconfig.volar.setup {
   capabilities = capabilities,
 }
+
+
+lspconfig.emmet_language_server.setup {
+  capabilities = capabilities,
+  filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'html', 'css', 'sass', 'scss', 'less' },
+}

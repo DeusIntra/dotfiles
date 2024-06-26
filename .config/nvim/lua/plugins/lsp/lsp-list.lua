@@ -8,4 +8,5 @@ return {
   "tsserver",
   "vimls",
   "volar",
+  "emmet_language_server",
 }
