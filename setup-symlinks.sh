@@ -6,6 +6,7 @@ dotfiles=(
   ".config/nvim"
   ".config/xfce4"
   ".config/Thunar"
+  ".config/kitty"
   ".ssh/config"
   ".themes"
   ".icons"
