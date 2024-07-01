@@ -128,6 +128,7 @@ echo $PATH | grep -Eq "(^|:)/sbin(:|)"     || PATH=$PATH:/sbin
 echo $PATH | grep -Eq "(^|:)/usr/sbin(:|)" || PATH=$PATH:/usr/sbin
 
 export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:$HOME/.local/kitty.app/bin"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
