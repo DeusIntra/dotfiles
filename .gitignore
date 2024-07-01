@@ -2,3 +2,6 @@ xfce4-screenshooter
 .config/xfce4/xfconf/xfce-perchannel-xml/*
 .config/xfce4/desktop
 .config/Thunar/accels.scm
+.config/Thunar/renamerrc
+.config/xfce4/panel/whiskermenu-4.rc
+
