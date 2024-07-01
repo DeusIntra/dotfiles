@@ -4,4 +4,4 @@ xfce4-screenshooter
 .config/Thunar/accels.scm
 .config/Thunar/renamerrc
 .config/xfce4/panel/whiskermenu-4.rc
-
+.uuid*
