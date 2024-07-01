@@ -27,10 +27,11 @@ for dotfile in ${dotfiles[@]}; do
     rm $HOME/$dotfile
   elif [ -e $HOME/$dotfile ]; then
     path_name=$(dirname "${dotfile}")
+    echo path: $pathname
     if [ $path_name = "." ]; then
-      mv --backup --suffix=.bak $HOME/$dotfile $HOME/$dotfile
+      mv --backup --suffix=.bak $HOME/$dotfile $HOME/$dotfile.bak
     else
-      mv --backup --suffix=.bak $HOME/dotfile $HOME/$path_name
+      mv --backup --suffix=.bak $HOME/$dotfile $HOME/$path_name.bak
     fi
     echo created backup for $HOME/$dotfile
   fi

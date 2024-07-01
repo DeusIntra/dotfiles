@@ -5,3 +5,4 @@ xfce4-screenshooter
 .config/Thunar/renamerrc
 .config/xfce4/panel/whiskermenu-4.rc
 .uuid*
+.config/nvim/lazy-lock.json
