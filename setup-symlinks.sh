@@ -2,6 +2,7 @@
 
 dotfiles=(
   ".bashrc"
+  ".zshrc"
   ".gitconfig"
   ".config/nvim"
   ".config/xfce4"
