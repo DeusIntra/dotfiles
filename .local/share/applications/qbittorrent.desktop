@@ -2,8 +2,9 @@
 Version=1.0
 Name=qBitTorrent
 GenericName=BitTorrent Client
-Comment=
+Comment=Open .torrent files
 Exec=/opt/qbittorrent-4.6.5_x86_64.AppImage %f
+Icon=/home/deusintra/.icons/Fluent/scalable/apps/qbittorrent.svg
 Terminal=false
 Type=Application
 Categories=Utility;
