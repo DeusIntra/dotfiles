@@ -6,3 +6,4 @@ xfce4-screenshooter
 .config/xfce4/panel/whiskermenu-4.rc
 .uuid*
 .config/nvim/lazy-lock.json
+*.bak
