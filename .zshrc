@@ -1,3 +1,11 @@
+# Lines configured by zsh-newuser-install
+setopt nomatch
+unsetopt autocd beep extendedglob notify
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/deusintra/.zshrc'
+# End of lines added by compinstall
+
 # Set up the prompt
 
 # autoload -Uz promptinit
@@ -22,7 +30,7 @@ bindkey -v
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
 SAVEHIST=1000
-HISTFILE=~/.zsh_history
+HISTFILE=~/.config/zsh/history
 
 # Use modern completion system
 autoload -Uz compinit
@@ -67,5 +75,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -15,7 +15,7 @@ dotfiles=(
   ".themes"
   ".icons"
   ".local/share/applications/nvim-terminal.desktop"
-  ".local/share/applications/qbittorrent.desktop"
+  # ".local/share/applications/qbittorrent.desktop"
   ".fonts"
 )
 
