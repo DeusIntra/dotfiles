@@ -62,6 +62,7 @@ alias gs="git status"
 alias ga="git add"
 alias gcm="git commit -m"
 alias c="clear"
+alias yayrm="yay -R \$(yay -Qdtq)"
 
 # Add sbin directories to PATH.  This is useful on systems that have sudo
 echo $PATH | grep -Eq "(^|:)/sbin(:|)"     || PATH=$PATH:/sbin
