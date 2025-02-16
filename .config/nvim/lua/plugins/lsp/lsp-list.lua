@@ -9,4 +9,5 @@ return {
   "vimls",
   "volar",
   "emmet_language_server",
+  "clangd",
 }

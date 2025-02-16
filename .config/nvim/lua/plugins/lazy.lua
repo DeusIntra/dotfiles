@@ -26,7 +26,7 @@ require("lazy").setup({
   },
   { "L3MON4D3/LuaSnip", version = "v2.*", build = "make install_jsregexp" },
   { "saadparwaiz1/cmp_luasnip" },
-  { "windwp/nvim-autopairs", event = "InsertEnter", opts = {} },
+  { "windwp/nvim-autopairs", event = "InsertEnter", config = true, opts = {} },
   "windwp/nvim-ts-autotag",
   { 'numToStr/Comment.nvim', opts = {} },
   {
