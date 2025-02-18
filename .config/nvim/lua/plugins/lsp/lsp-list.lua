@@ -10,4 +10,6 @@ return {
   "volar",
   "emmet_language_server",
   "clangd",
+  "dockerls",
+  "docker_compose_language_service",
 }
