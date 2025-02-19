@@ -6,7 +6,6 @@ require("mason-nvim-lint").setup({
 
 local lint = require("nvim-lint")
 lint.linters_by_ft = {
-  lua = "luacheck",
   sh = "shellcheck",
   text = "vale",
 }
