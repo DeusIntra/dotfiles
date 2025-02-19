@@ -6,6 +6,8 @@ require("lazy").setup({
     "neovim/nvim-lspconfig",
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
+    "mfussenegger/nvim-lint",
+    "rshkarin/mason-nvim-lint",
     "sindrets/diffview.nvim",
   {
     "onsails/lspkind.nvim",
