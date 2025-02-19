@@ -29,7 +29,7 @@ require("lazy").setup({
   { "L3MON4D3/LuaSnip", version = "v2.*", build = "make install_jsregexp" },
   { "saadparwaiz1/cmp_luasnip" },
   { "windwp/nvim-autopairs", event = "InsertEnter", config = true, opts = {} },
-  "windwp/nvim-ts-autotag",
+    "windwp/nvim-ts-autotag",
   { 'numToStr/Comment.nvim', opts = {} },
   {
     "kylechui/nvim-surround",
@@ -38,6 +38,23 @@ require("lazy").setup({
     config = function()
       require("nvim-surround").setup({})
     end
+  },
+  {
+    -- Install markdown preview, use npx if available.
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function(plugin)
+      if vim.fn.executable "npx" then
+        vim.cmd("!cd " .. plugin.dir .. " && cd app && npx --yes yarn install")
+      else
+        vim.cmd [[Lazy load markdown-preview.nvim]]
+        vim.fn["mkdp#util#install"]()
+      end
+    end,
+    init = function()
+      if vim.fn.executable "npx" then vim.g.mkdp_filetypes = { "markdown" } end
+    end,
   },
 });
 
