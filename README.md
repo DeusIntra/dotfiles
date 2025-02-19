@@ -6,11 +6,7 @@ Clone this repository (preferably in your **$HOME** directory) and run **setup-s
 
 ```bash
 git clone https://github.com/DeusIntra/dotfiles.git
-```
-```bash
 cd dotfiles
-```
-```bash
 ./setup-symlinks.sh
 ```
 
