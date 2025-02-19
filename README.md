@@ -17,3 +17,12 @@ cd dotfiles
 At the top **setup-symlinks.sh** has an array of files and directories you want to symlink to corresponding files/directories in your **$HOME**.
 It also creates a backup of the original file if it exists.
 If the original file is actually a link, it will be deleted.
+
+## Neovim health dependencies:
+- xclip
+- nvm
+- python
+- python-pip
+- luarocks
+- rgrep
+
