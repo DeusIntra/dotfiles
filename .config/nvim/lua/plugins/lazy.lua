@@ -30,7 +30,8 @@ require("lazy").setup({
   { "saadparwaiz1/cmp_luasnip" },
   { "windwp/nvim-autopairs", event = "InsertEnter", config = true, opts = {} },
     "windwp/nvim-ts-autotag",
-  { 'numToStr/Comment.nvim', opts = {} },
+    'numToStr/Comment.nvim',
+    'JoosepAlviste/nvim-ts-context-commentstring',
   {
     "kylechui/nvim-surround",
     version="*",
