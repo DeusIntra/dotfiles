@@ -38,7 +38,7 @@ vim.api.nvim_create_user_command("LintInfo", function()
   end
 end, {})
 
-vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+vim.api.nvim_create_autocmd({ "TextChanged", "TextChangedI", "BufReadPost", "BufWritePost" }, {
   callback = function()
     require("lint").try_lint()
   end,
