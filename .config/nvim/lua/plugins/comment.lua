@@ -1,5 +1,10 @@
 require('ts_context_commentstring').setup {
   enable_autocmd = false,
+  languages = {
+    jsonc = {
+      __default = '// %s',
+    }
+  }
 }
 
 require("Comment").setup({
