@@ -57,5 +57,6 @@ require("lazy").setup({
       if vim.fn.executable "npx" then vim.g.mkdp_filetypes = { "markdown" } end
     end,
   },
+  { "karb94/neoscroll.nvim" },
 });
 
