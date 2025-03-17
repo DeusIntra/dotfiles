@@ -25,15 +25,14 @@ neoscroll.setup({
 local keymap = {
   ["<PageUp>"] = function() neoscroll.ctrl_b({ duration = 200 }) end;
   ["<PageDown>"] = function() neoscroll.ctrl_f({ duration = 200 }) end;
-  ["G"] = function()
-    neoscroll.G({ half_win_duration = 50 })
-    vim.cmd("normal L")
-  end;
-  ["gg"] = function()
-    neoscroll.gg({ half_win_duration = 50 })
-    vim.cmd("normal H")
-  end;
-  ["C-D"] = nil --function() end;
+  -- ["G"] = function()
+  --   neoscroll.G({ half_win_duration = 50 })
+  --   vim.cmd("normal L")
+  -- end;
+  -- ["gg"] = function()
+  --   neoscroll.gg({ half_win_duration = 50 })
+  --   vim.cmd("normal H")
+  -- end;
 }
 
 for key, func in pairs(keymap) do
