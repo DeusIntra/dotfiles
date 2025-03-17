@@ -8,6 +8,7 @@ local lsps_by_ft = {
   ts_ls = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
   volar = { "vue" },
   emmet_language_server = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "html", "css", "sass", "scss", "less" },
+  pylsp = { "python" },
   dockerls = {},
   docker_compose_language_service = {},
 }
