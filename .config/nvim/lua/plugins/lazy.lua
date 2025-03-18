@@ -58,5 +58,6 @@ require("lazy").setup({
     end,
   },
   { "karb94/neoscroll.nvim" },
+  { 'stevearc/oil.nvim', dependencies = { "nvim-tree/nvim-web-devicons" }, lazy = false },
 });
 
