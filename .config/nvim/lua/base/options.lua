@@ -16,3 +16,6 @@ opt.smartcase = true
 opt.linebreak = true
 opt.clipboard = "unnamedplus"
 
+opt.foldmethod = "marker"
+opt.foldcolumn = "2"
+
