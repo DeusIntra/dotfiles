@@ -16,6 +16,12 @@ opt.smartcase = true
 opt.linebreak = true
 opt.clipboard = "unnamedplus"
 
-opt.foldmethod = "marker"
-opt.foldcolumn = "2"
+opt.fillchars = 'eob: ,fold: ,foldopen:,foldsep: ,foldclose:'
+opt.foldcolumn = '1'
+opt.foldenable = true
+-- opt.foldexpr = 'v:lua.vim.lsp.foldexpr()' -- reserved for when fixed
+opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+opt.foldlevel = 99
+opt.foldlevelstart = 99
+opt.foldmethod = 'expr'
 
