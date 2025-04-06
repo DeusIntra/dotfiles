@@ -34,7 +34,6 @@ ls.add_snippets("all", {
   })
 })
 
--- vue {{{
 ls.add_snippets("vue", {
   s("vue3-base-ts", {
     t({
@@ -61,9 +60,7 @@ ls.add_snippets("vue", {
     t({ "", "})", })
   })
 })
--- }}}
 
--- sh {{{
 ls.add_snippets("sh", {
   s("shebang!", {
     t("#!/usr/bin/"), i(1, "bash"), t({ "", "" }), i(0)
@@ -75,19 +72,24 @@ ls.add_snippets("sh", {
     t("#!/usr/bin/"), i(1, "bash"), t({ "", "" }), i(0)
   })
 })
--- }}}
 
--- hello {{{
-local exportDefaultFunction = {
-  s("edf", {
-    t("export default function "), i(1, "fun"), t({ "() {",
+local exportDefaultFunction = s("edf", {
+  t("export default function "), i(1, "fun"), t({ "() {",
+  "  " }), i(0), t({ "",
+  "}" })
+})
+
+local useState = s("useState", {
+  t("const ["), i(1, "state"), t(", set"), i(2, "State"), t("] = useState("), i(3), t(")")
+})
+
+local useEffect = s("useEffect", {
+  t({ "useEffect(() => {",
     "  " }), i(0), t({ "",
-    "}" })
-  })
-}
+  "}, " }), i(1, "[]"), t(")")
+})
 
-ls.add_snippets("javascript", exportDefaultFunction)
-ls.add_snippets("typescript", exportDefaultFunction)
-ls.add_snippets("javascriptreact", exportDefaultFunction)
-ls.add_snippets("typescriptreact", exportDefaultFunction)
--- }}}
+ls.add_snippets("javascript", { exportDefaultFunction })
+ls.add_snippets("typescript", { exportDefaultFunction })
+ls.add_snippets("javascriptreact", { exportDefaultFunction, useState, useEffect })
+ls.add_snippets("typescriptreact", { exportDefaultFunction, useState, useEffect })
