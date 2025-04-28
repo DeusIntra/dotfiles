@@ -73,6 +73,7 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export PATH="$PATH:/home/deus/.modular/bin" # magic for mojo
+export NODE_COMPILE_CACHE=~/.cache/nodejs-compile-cache # faster nodejs script loads
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
