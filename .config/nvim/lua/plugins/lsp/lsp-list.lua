@@ -1,17 +1,15 @@
-local lsps_by_ft = {
-  bashls = { "sh" },
-  -- cssls = { "css, scss, less" },
-  eslint = { "javascript", "typescript", "javascriptreact", "typescriptreact" },
-  html = { "markdown" --[[ "html" ]] },
-  somesass_ls = { "scss" },
-  lua_ls = { "lua" },
-  ts_ls = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
-  volar = { "vue" },
-  emmet_language_server = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "html", "css", "sass", "scss", "less" },
-  pylsp = { "python" },
-  dockerls = {},
-  docker_compose_language_service = {},
+local lsp_list = {
+  "bashls",
+  "cssls",
+  "docker_compose_language_service",
+  "dockerls",
+  "eslint",
+  "html",
+  "lua_ls",
+  "pylsp",
+  "ts_ls",
+  "vue_ls",
 }
 
-return lsps_by_ft
+return lsp_list
 

@@ -3,3 +3,5 @@
 [user]
 	email = deusintra@yahoo.com
 	name = DeusIntra
+[core]
+	quotePath = false
