@@ -9,6 +9,7 @@ local lsp_list = {
   "pylsp",
   "ts_ls",
   "vue_ls",
+  "markdown_oxide",
 }
 
 return lsp_list
