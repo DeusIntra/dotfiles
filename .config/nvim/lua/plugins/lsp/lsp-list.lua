@@ -6,10 +6,10 @@ local lsp_list = {
   "eslint",
   "html",
   "lua_ls",
+  "marksman",
   "pylsp",
   "ts_ls",
   "vue_ls",
-  "markdown_oxide",
 }
 
 return lsp_list
