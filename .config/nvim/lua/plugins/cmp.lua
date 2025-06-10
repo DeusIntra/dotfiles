@@ -128,13 +128,18 @@ cmp.setup({
 
       -- customize the appearance of the completion menu
       format = function(entry, vim_item)
-          vim_item.menu = ({
-              nvim_lsp = "[Lsp]",
-              luasnip = "[Luasnip]",
-              buffer = "[File]",
-              path = "[Path]",
-          })[entry.source.name]
-          return vim_item
+        if entry.source.name == 'nvim_lsp' and entry.source.source.client.name == 'marksman' and vim_item.kind == 'Reference' then
+          vim_item.word = '<' .. vim_item.word:gsub("%%(%x%x)", function(hex)
+            return string.char(tonumber(hex, 16))
+          end) .. '>'
+        end
+        vim_item.menu = ({
+            nvim_lsp = "[Lsp]",
+            luasnip = "[Luasnip]",
+            buffer = "[File]",
+            path = "[Path]",
+        })[entry.source.name]
+        return vim_item
       end,
   },
 
