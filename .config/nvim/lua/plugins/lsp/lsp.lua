@@ -1,4 +1,3 @@
-local lspconfig = vim.lsp.config
 local lsp_list = require("plugins/lsp/lsp-list")
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
@@ -9,6 +8,8 @@ for _, lsp in ipairs(lsp_list) do
   if opts['capabilities'] == nil then
     opts['capabilities'] = capabilities
   end
-  lspconfig(lsp, opts)
+  vim.lsp.config(lsp, opts)
 end
+
+vim.lsp.enable(lsp_list)
 
