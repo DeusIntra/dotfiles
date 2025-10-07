@@ -5,6 +5,7 @@ local lsp_list = {
   "dockerls",
   "eslint",
   "html",
+  "intelephense",
   "lua_ls",
   "marksman",
   "pylsp",
