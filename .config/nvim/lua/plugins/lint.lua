@@ -5,6 +5,7 @@ local linters_by_ft = {
   tsx = { "eslint_d" },
   cpp = { "cpplint" },
   markdown = { "markdownlint" },
+  python = { "mypy" },
 }
 
 
