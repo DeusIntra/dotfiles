@@ -1,4 +1,5 @@
 local dap = require("dap")
+local get_project_root = require("utils.get_project_root")
 
 dap.adapters.php = {
   type = 'executable',
@@ -8,16 +9,17 @@ dap.adapters.php = {
 
 dap.configurations.php = {
   {
+    name = "Listen for Xdebug",
     type = "php",
     request = "launch",
-    name = "Listen for Xdebug",
     port = 9003,
     pathMappings = {
-      ["/var/www/html"] = "${workspaceFolder}"
+      ["/var/www/html/www"] = get_project_root({".git"}),
+      ["/var/www/html"] = get_project_root({".git"}),
     },
-    hostname = "localhost",
+    -- hostname = "localhost",
     -- preLaunchTask = "DDEV: Enable Xdebug",
     -- postDebugTask = "DDEV: Disable Xdebug",
-  }
+  },
 }
 
