@@ -18,5 +18,24 @@ end
 
 -- Adding symbols for breakpoints and such
 vim.fn.sign_define("DapBreakpoint", { text = "🔴", texthl = "", linehl = "", numhl = "" })
-vim.fn.sign_define("DapStopped", { text = "→", texthl = "", linehl = "", numhl = "" })
+--vim.fn.sign_define("DapStopped", { text = "→", texthl = "", linehl = "", numhl = "" })
+vim.fn.sign_define("DapStopped", { text = "➤", texthl = "", linehl = "", numhl = "" })
+-- →
+-- ⟴
+-- ⟶
+-- ⟹
+-- ⟾
+-- ⟿
+-- ⤃
+-- ⤇
+-- ⤏
+-- ⤗
+-- ⤘
+-- ⤜
+-- ⤠
+-- ⤷
+-- ➤
+-- ➧
+-- ➨
+-- ➼
 
