@@ -1,9 +1,14 @@
+local dap_list = require("plugins/dap/dap-list")
+
 local dap_config = function ()
   require("plugins/dap/dapui")
-  require("plugins/dap/configs/php")
+
+  --[[ Get all dap configs ]]--
+  for _, adapter_name in ipairs(dap_list) do
+    require("plugins/dap/configs/" .. adapter_name)
+  end
 
   local dap = require("dap")
-
 
   vim.keymap.set('n', '<F5>', dap.continue)
   vim.keymap.set('n', '<F10>', dap.step_over)

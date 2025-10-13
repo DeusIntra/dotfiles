@@ -15,9 +15,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("plugins/lazy")
-require("plugins/treesitter")
+require("plugins/mason")
 require("plugins/lsp")
 require("plugins/dap")
+require("plugins/treesitter")
 require("plugins/lint")
 require("plugins/lualine")
 require("plugins/snippets/luasnip")

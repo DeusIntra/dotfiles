@@ -1,5 +1,5 @@
 local dap = require("dap")
-local get_project_root = require("utils.get_project_root")
+local get_project_root = require("utils/get_project_root")
 
 dap.adapters.php = {
   type = 'executable',
