@@ -19,7 +19,8 @@ require("lazy").setup({
     },
     config = require("plugins/dap")
   },
-
+    require("plugins/conform"),
+    "zapling/mason-conform.nvim",
     "sindrets/diffview.nvim",
   {
     "onsails/lspkind.nvim",
