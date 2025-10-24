@@ -1,6 +1,3 @@
 require("base")
-require("plugins")
-require("plugins/keymap")
+require("config")
 
--- vim.cmd[[colorscheme tokyonight]]
-vim.cmd[[colorscheme catppuccin-frappe]]

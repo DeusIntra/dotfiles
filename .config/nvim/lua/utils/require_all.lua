@@ -8,7 +8,7 @@ local function require_all(dir, exclude)
   end
   for _, v in ipairs(files) do
     if v ~= 'init' then
-      require(dir.gsub('/', '.') .. '.' .. v)
+      require(string.gsub(dir, '/', '.') .. '.' .. v)
     end
   end
 end

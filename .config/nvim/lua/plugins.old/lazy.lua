@@ -1,8 +1,8 @@
 require("lazy").setup({
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-  { "nvim-telescope/telescope.nvim", tag = "0.1.6", dependencies = { "nvim-lua/plenary.nvim" } },
-  { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
+  -- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  -- { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+  -- { "nvim-telescope/telescope.nvim", tag = "0.1.6", dependencies = { "nvim-lua/plenary.nvim" } },
+  -- { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
 
     "neovim/nvim-lspconfig",
     "williamboman/mason.nvim",
@@ -45,32 +45,32 @@ require("lazy").setup({
     "windwp/nvim-ts-autotag",
     'numToStr/Comment.nvim',
     'JoosepAlviste/nvim-ts-context-commentstring',
-  {
-    "kylechui/nvim-surround",
-    version="*",
-    event="VeryLazy",
-    config = function()
-      require("nvim-surround").setup({})
-    end
-  },
-  {
-    -- Install markdown preview, use npx if available.
-    "iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-    ft = { "markdown" },
-    build = function(plugin)
-      if vim.fn.executable "npx" then
-        vim.cmd("!cd " .. plugin.dir .. " && cd app && npx --yes yarn install")
-      else
-        vim.cmd [[Lazy load markdown-preview.nvim]]
-        vim.fn["mkdp#util#install"]()
-      end
-    end,
-    init = function()
-      if vim.fn.executable "npx" then vim.g.mkdp_filetypes = { "markdown" } end
-    end,
-  },
+  -- {
+  --   "kylechui/nvim-surround",
+  --   version="*",
+  --   event="VeryLazy",
+  --   config = function()
+  --     require("nvim-surround").setup({})
+  --   end
+  -- },
+  -- {
+  --   -- Install markdown preview, use npx if available.
+  --   "iamcco/markdown-preview.nvim",
+  --   cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+  --   ft = { "markdown" },
+  --   build = function(plugin)
+  --     if vim.fn.executable "npx" then
+  --       vim.cmd("!cd " .. plugin.dir .. " && cd app && npx --yes yarn install")
+  --     else
+  --       vim.cmd [[Lazy load markdown-preview.nvim]]
+  --       vim.fn["mkdp#util#install"]()
+  --     end
+  --   end,
+  --   init = function()
+  --     if vim.fn.executable "npx" then vim.g.mkdp_filetypes = { "markdown" } end
+  --   end,
+  -- },
   { "karb94/neoscroll.nvim" },
-  { 'stevearc/oil.nvim', dependencies = { "nvim-tree/nvim-web-devicons" }, lazy = false },
+  -- { 'stevearc/oil.nvim', dependencies = { "nvim-tree/nvim-web-devicons" }, lazy = false },
 });
 
