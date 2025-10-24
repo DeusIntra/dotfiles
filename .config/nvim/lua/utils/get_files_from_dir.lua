@@ -1,4 +1,4 @@
-local map = require "utils.map"
+local map = require("utils.map")
 
 local function strip_ending(file)
   return file:gsub("%.lua$", "")
