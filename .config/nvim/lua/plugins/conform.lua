@@ -6,6 +6,8 @@ local formatters_by_ft = {
   javascript = js_formatters,
   typescript = js_formatters,
   vue = js_formatters,
+  json = js_formatters,
+  jsonc = js_formatters,
 }
 
 return {

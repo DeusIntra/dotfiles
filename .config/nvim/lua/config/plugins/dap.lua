@@ -1,3 +1,9 @@
+local get_files_from_dir = require("utils.get_files_from_dir")
+local dap_list = get_files_from_dir("config/dap")
+require("mason-nvim-dap").setup({
+  ensure_installed = dap_list
+})
+
 local dap = require("dap")
 local dapui = require("dapui")
 dapui.setup()
