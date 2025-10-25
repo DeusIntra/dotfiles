@@ -1,51 +1,8 @@
--- local lsp_list = {
---   "bashls",
---   "cssls",
---   "docker_compose_language_service",
---   "dockerls",
---   "eslint",
---   "html",
---   "intelephense",
---   "lua_ls",
---   "marksman",
---   "pylsp",
---   "ts_ls",
---   "vue_ls",
--- }
-
--- local get_files_from_dir = require("utils.get_files_from_dir")
--- local lsp_list = get_files_from_dir("config/lsp")
--- local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
 return {
-  -- "mason-org/mason-lspconfig.nvim",
-  -- dependencies = {
-  --   { "mason-org/mason.nvim", opts = {} },
-  --   "neovim/nvim-lspconfig",
-  --   {
-  --     "hrsh7th/nvim-cmp",
-  --     dependencies = {
-  --       "lspkind.nvim",
-  --       "hrsh7th/cmp-nvim-lsp", -- lsp auto-completion
-  --       "hrsh7th/cmp-buffer", -- buffer auto-completion
-  --       "hrsh7th/cmp-path", -- path auto-completion
-  --       "hrsh7th/cmp-cmdline", -- cmdline auto-completion
-  --     },
-  --     config = function()
-  --       require("plugins/cmp")
-  --     end,
-  --   },
-  -- },
-  -- opts = {},
-  -- config = function ()
-  --   for _, lsp in ipairs(lsp_list) do
-  --     local opts = require("config.lsp." .. lsp)
-  --     if opts['capabilities'] == nil then
-  --       opts['capabilities'] = capabilities
-  --     end
-  --     vim.lsp.config(lsp, opts)
-  --   end
-  --
-  --   vim.lsp.enable(lsp_list)
-  -- end
+  "mason-org/mason-lspconfig.nvim",
+  dependencies = {
+    { "mason-org/mason.nvim", opts = {} },
+    "neovim/nvim-lspconfig",
+    "hrsh7th/cmp-nvim-lsp",
+  }
 }

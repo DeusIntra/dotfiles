@@ -2,9 +2,9 @@ return {
   "karb94/neoscroll.nvim",
   opts = {
     mappings = { "zt", "zz", "zb" },
-    hide_cursor = false, -- true,          -- Hide cursor while scrolling
+    hide_cursor = false,       -- true,          -- Hide cursor while scrolling
     duration_multiplier = 0.2, -- 1.0,   -- Global duration multiplier
-    easing = "sine", -- "linear",           -- Default easing function
+    easing = "sine",           -- "linear",           -- Default easing function
     -- mappings = {                 -- Keys to be mapped to their corresponding default scrolling animation
     --   "<C-u>", "<C-d>",
     --   "<C-b>", "<C-f>",

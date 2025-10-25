@@ -5,9 +5,9 @@ local opts = {
   settings = {
     intelephense = {
       files = {
-        maxSize = 1000000;
-      };
-    };
+        maxSize = 1000000,
+      },
+    },
   },
   -- init_options = {
   --   storagePath = …, -- Optional absolute path to storage dir. Defaults to os.tmpdir().

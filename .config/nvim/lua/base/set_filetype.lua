@@ -1,3 +1,5 @@
+--- @param pattern string|string[]
+--- @param filetype string
 local function set_filetype(pattern, filetype)
   vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
     pattern = pattern,
@@ -11,4 +13,3 @@ set_filetype({
   "*compose*.yml*",
   "*compose*.yaml*",
 }, "yaml.docker-compose")
-

@@ -10,7 +10,7 @@ return {
     },
     sections = {
       lualine_a = { { 'mode', separator = { left = '' }, right_padding = 2 } },
-      lualine_b = {'branch', 'diff', 'diagnostics'},
+      lualine_b = { 'branch', 'diff', 'diagnostics' },
       lualine_c = {
         '%=',
         'filename'
