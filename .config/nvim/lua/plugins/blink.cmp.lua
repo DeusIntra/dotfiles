@@ -30,8 +30,23 @@ return {
     -- C-k: Toggle signature help (if signature.enabled = true)
     --
     -- See :h blink-cmp-config-keymap for defining your own keymap
-    keymap = { preset = 'default' },
-    signature = { enabled = true },
+    keymap = {
+      preset = "enter",
+
+      ["<Tab>"] = {
+        "select_next",
+        "snippet_forward",
+        "fallback",
+      },
+
+      ["<S-Tab>"] = {
+        "select_prev",
+        "snippet_backward",
+        "fallback",
+      },
+    },
+    signature = { enabled = true,
+    },
 
     appearance = {
       -- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
@@ -40,7 +55,12 @@ return {
     },
 
     -- (Default) Only show the documentation popup when manually triggered
-    completion = { documentation = { auto_show = false } },
+    completion = {
+      documentation = { auto_show = false },
+      list = {
+        selection = { auto_insert = true, preselect = true },
+      }
+    },
 
     -- Default list of enabled providers defined so that you can extend it
     -- elsewhere in your config, without redefining it, due to `opts_extend`
@@ -55,5 +75,5 @@ return {
     -- See the fuzzy documentation for more information
     fuzzy = { implementation = "prefer_rust_with_warning" },
   },
-  opts_extend = { "sources.default" }
+  opts_extend = { "sources.enter" }
 }
