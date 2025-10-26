@@ -1,6 +1,5 @@
-require("base")
-require("plugins")
-require("plugins/keymap")
+vim.uv = vim.uv or vim.loop
 
--- vim.cmd[[colorscheme tokyonight]]
-vim.cmd[[colorscheme catppuccin-frappe]]
+require("base")
+require("config")
+

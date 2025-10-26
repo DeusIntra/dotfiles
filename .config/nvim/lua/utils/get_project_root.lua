@@ -6,7 +6,7 @@ local function get_project_root(root_markers)
 
   -- Look for common project markers
   -- local root_markers = {
-  --   'composer.json', '.git', 'ddev.config.yaml', 
+  --   'composer.json', '.git', 'ddev.config.yaml',
   --   'package.json', 'Makefile', 'README.md'
   -- }
 

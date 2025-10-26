@@ -1,4 +1,3 @@
--- Define your formatters
 local js_formatters = { "prettierd", "prettier", stop_after_first = true }
 local formatters_by_ft = {
   python = { "isort", "black" },
@@ -7,6 +6,8 @@ local formatters_by_ft = {
   javascript = js_formatters,
   typescript = js_formatters,
   vue = js_formatters,
+  json = js_formatters,
+  jsonc = js_formatters,
 }
 
 return {
@@ -40,7 +41,7 @@ return {
     --formatters = { shfmt = { append_args = { "-i", "2" }, }, },
   },
   --init = function()
-    -- If you want the formatexpr, here is the place to set it
-    --vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
+  -- If you want the formatexpr, here is the place to set it
+  --vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
   --end,
 }

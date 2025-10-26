@@ -135,4 +135,3 @@ dap.configurations.javascript = {
   launchEdgeConfig,
   attachToNestjsConfig,
 }
-

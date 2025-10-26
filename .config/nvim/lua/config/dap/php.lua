@@ -4,7 +4,7 @@ local get_project_root = require("utils/get_project_root")
 local project_root = get_project_root({ ".git" })
 
 local function ends_with(str, ending)
-   return ending == "" or str:sub(-#ending) == ending
+  return ending == "" or str:sub(- #ending) == ending
 end
 
 dap.adapters.php = {
