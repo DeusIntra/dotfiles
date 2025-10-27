@@ -1,0 +1,8 @@
+local opts = {
+  cmd = { "phpactor", "language-server", "-vvv" },
+  filetypes = { "php" },
+  root_markers = { ".git", "composer.json", ".phpactor.json", ".phpactor.yml" },
+  workspace_required = true,
+}
+
+return opts

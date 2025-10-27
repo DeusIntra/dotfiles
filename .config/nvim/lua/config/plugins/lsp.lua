@@ -4,7 +4,7 @@ local lsp_list = get_files_from_dir("config/lsp")
 
 require("mason-lspconfig").setup({
   ensure_installed = lsp_list,
-  automatic_enable = true,
+  automatic_enable = false,
 })
 
 for _, lsp in ipairs(lsp_list) do

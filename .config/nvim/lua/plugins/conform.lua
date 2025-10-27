@@ -1,5 +1,6 @@
 local js_formatters = { "prettierd", "prettier", stop_after_first = true }
 local formatters_by_ft = {
+  php = { "pretty-php" },
   python = { "isort", "black" },
   javascriptreact = js_formatters,
   typescriptreact = js_formatters,

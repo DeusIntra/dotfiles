@@ -1,0 +1,23 @@
+{
+  "phpTools.language": "ru",
+  "php.inlayHints.parameters.enabled": false,
+  "php.problems.exclude": {
+    "bitrix/": true
+  },
+  "php.codeActions.enabled": false,
+  "php.files.exclude": {
+    "**/upload": true,
+    "**/bitrix/cache": true,
+    "**/bitrix/managed_cache": true,
+    "**/bitrix/backup": true,
+    "**/bitrix/stack_cache": true,
+    "**/bitrix/wizards": true,
+    "**/install": true,
+    "**/templates": true,
+    "**/.access.php": true,
+    "**/lang": true,
+    "**/tmp": true
+  },
+  "intelliphp.inlineSuggestionsEnabled": false,
+  "phpTools.suppressPremiumFeatures": true
+}
