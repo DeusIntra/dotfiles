@@ -4,6 +4,8 @@ local function get_project_root(root_markers)
     current_file = vim.fn.getcwd()
   end
 
+  current_file = string.gsub(current_file, "^%w*://", "")
+
   -- Look for common project markers
   -- local root_markers = {
   --   'composer.json', '.git', 'ddev.config.yaml',
