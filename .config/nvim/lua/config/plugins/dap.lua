@@ -23,8 +23,15 @@ dap.listeners.before.event_exited.dapui_config = function()
   dapui.close()
 end
 
-vim.fn.sign_define("DapBreakpoint", { text = "🔴", texthl = "", linehl = "", numhl = "" })
-vim.fn.sign_define("DapStopped", { text = "➤", texthl = "", linehl = "", numhl = "" })
+vim.api.nvim_set_hl(0, 'DapStopped', { ctermbg = 0, fg = '#98c379', bg = '#31353f' })
+local bpHl = 'Error'
+local bpLogHl = 'Search'
+local bpStopHl = 'DapStopped'
+vim.fn.sign_define('DapBreakpoint', { text = '', texthl = bpHl, linehl = bpHl, numhl = bpHl })
+vim.fn.sign_define('DapBreakpointCondition', { text = '󰋗', texthl = bpHl, linehl = bpHl, numhl = bpHl })
+vim.fn.sign_define('DapBreakpointRejected', { text = '', texthl = bpHl, linehl = bpHl, numhl = bpHl })
+vim.fn.sign_define('DapLogPoint', { text = '', texthl = bpLogHl, linehl = bpLogHl, numhl = bpLogHl })
+vim.fn.sign_define('DapStopped', { text = '', texthl = bpStopHl, linehl = bpStopHl, numhl = bpStopHl })
 
 vim.keymap.set('n', '<F4>', dapui.close)
 
