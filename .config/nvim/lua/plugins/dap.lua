@@ -8,7 +8,6 @@ return {
       dependencies = {
         {
           "nvim-treesitter/nvim-treesitter",
-          build = ":TSUpdate",
         }
       }
     },
