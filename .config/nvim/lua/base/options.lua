@@ -4,7 +4,6 @@ opt.number = true
 opt.list = true
 
 opt.tabstop = 2
-opt.softtabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
 
@@ -24,3 +23,11 @@ opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 opt.foldlevel = 99
 opt.foldlevelstart = 99
 opt.foldmethod = 'expr'
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "php",
+  callback = function()
+    vim.bo.tabstop = 4
+    vim.bo.shiftwidth = 4
+  end
+})

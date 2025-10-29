@@ -1,3 +1,2 @@
-require("base/options")
-require("base/keymap")
-require("base/set_filetype")
+local require_all = require('utils.require_all')
+require_all('base')
