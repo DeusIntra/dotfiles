@@ -24,8 +24,9 @@ dap.listeners.before.event_exited.dapui_config = function()
 end
 
 vim.api.nvim_set_hl(0, 'DapStopped', { ctermbg = 0, fg = '#98c379', bg = '#31353f' })
-local bpHl = 'Error'
-local bpLogHl = 'Search'
+local bpHl = 'ErrorMsg'
+-- local bpLogHl = 'Search'
+local bpLogHl = 'MoreMsg'
 local bpStopHl = 'DapStopped'
 vim.fn.sign_define('DapBreakpoint', { text = '', texthl = bpHl, linehl = bpHl, numhl = bpHl })
 vim.fn.sign_define('DapBreakpointCondition', { text = '󰋗', texthl = bpHl, linehl = bpHl, numhl = bpHl })
