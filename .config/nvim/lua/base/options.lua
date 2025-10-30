@@ -2,6 +2,7 @@ local opt = vim.opt
 
 opt.number = true
 opt.list = true
+opt.listchars:append({ tab = ">-" })
 
 opt.tabstop = 2
 opt.shiftwidth = 2
