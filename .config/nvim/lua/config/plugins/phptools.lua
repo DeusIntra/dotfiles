@@ -66,7 +66,6 @@ ensure_devsense_installed(function(success)
       ['0'] = '{}',
     },
     settings = {
-      ["phpTools.language"] = "ru",
       ["php.inlayHints.parameters.enabled"] = false,
       ["php.problems.exclude"] = {
         ["bitrix/"] = true

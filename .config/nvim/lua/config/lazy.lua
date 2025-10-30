@@ -25,6 +25,3 @@ require("lazy").setup({
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
-
-local require_all = require("utils.require_all")
-require_all("config/plugins")
