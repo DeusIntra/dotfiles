@@ -61,6 +61,15 @@ ls.add_snippets("vue", {
   })
 })
 
+ls.add_snippets("vue", {
+  s("vue3-emit", {
+    t({
+      "const emit = defineEmits<{",
+      "  (e: '" }), i(1, "change"), t("', "), i(2, "id: number"), t("): void"),
+    t({"",  "}>()" }),
+  }),
+})
+
 ls.add_snippets("sh", {
   s("shebang!", {
     t("#!/usr/bin/"), i(1, "bash"), t({ "", "" }), i(0)
