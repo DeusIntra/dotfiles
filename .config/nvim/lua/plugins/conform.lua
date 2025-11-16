@@ -20,11 +20,11 @@ return {
       -- Customize or remove this keymap to your liking
       "<leader>lf",
       function()
-        if vim.bo.filetype == 'vue' then
-          vim.lsp.buf.format()
-        else
+        -- if vim.bo.filetype == 'vue' then
+        --   vim.lsp.buf.format()
+        -- else
           require("conform").format({ async = true })
-        end
+        -- end
       end,
       mode = "",
       desc = "Format buffer",
