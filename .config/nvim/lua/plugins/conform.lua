@@ -1,6 +1,6 @@
 local js_formatters = { "prettierd", "prettier", stop_after_first = true }
 local formatters_by_ft = {
-  php = { "pretty-php" },
+  php = { "php-cs-fixer" },
   python = { "isort", "black" },
   javascriptreact = js_formatters,
   typescriptreact = js_formatters,
@@ -23,7 +23,7 @@ return {
         -- if vim.bo.filetype == 'vue' then
         --   vim.lsp.buf.format()
         -- else
-          require("conform").format({ async = true })
+        require("conform").format({ async = true })
         -- end
       end,
       mode = "",
@@ -42,7 +42,13 @@ return {
     -- Set up format-on-save
     --format_on_save = { timeout_ms = 500 },
     -- Customize formatters
-    --formatters = { shfmt = { append_args = { "-i", "2" }, }, },
+    formatters = { --{ shfmt = { append_args = { "-i", "2" }, }, },
+      ["php-cs-fixer"] = {
+        command = "php-cs-fixer",
+        args = { "fix", "--rules=@PSR12", "$FILENAME" },
+        stdin = false,
+      }
+    }
   },
   --init = function()
   -- If you want the formatexpr, here is the place to set it
