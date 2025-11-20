@@ -3,6 +3,7 @@ local linters_by_ft = {
   dockerfile = { "hadolint" },
   json = { "jsonlint" },
   tsx = { "eslint_d" },
+  -- javascript = { "eslint_d" },
   cpp = { "cpplint" },
   markdown = { "markdownlint" },
   python = { "mypy" },
