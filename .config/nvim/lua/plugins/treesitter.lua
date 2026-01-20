@@ -10,6 +10,7 @@ local ensure_installed = {
   "json5",
   "lua",
   "php",
+  "php_only",
   "scss",
   "tsx",
   "typescript",
