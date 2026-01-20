@@ -102,3 +102,23 @@ ls.add_snippets("javascript", { exportDefaultFunction })
 ls.add_snippets("typescript", { exportDefaultFunction })
 ls.add_snippets("javascriptreact", { exportDefaultFunction, useState, useEffect })
 ls.add_snippets("typescriptreact", { exportDefaultFunction, useState, useEffect })
+
+local htmlBoilerplate = s("!", {
+  t({"<!DOCTYPE html>",
+  "<html lang=\"en\">",
+  "<head>",
+  "    <meta charset=\"UTF-8\">",
+  "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+  "    <title>Page Title</title>",
+  "    <link rel=\"stylesheet\" href=\"style.css\">",
+  "</head>",
+  "<body>",
+  "    <h1>Hello, world!</h1>",
+  "    <script src=\"script.js\"></script>",
+  "</body>",
+  "</html>",
+  })
+})
+
+ls.add_snippets("html", { htmlBoilerplate })
+ls.add_snippets("php", { htmlBoilerplate })
