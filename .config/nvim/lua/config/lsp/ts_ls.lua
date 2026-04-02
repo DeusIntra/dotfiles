@@ -1,22 +1,17 @@
-local vue_language_server_path = vim.fn.expand '$MASON/packages' .. '/vue-language-server' .. '/node_modules/@vue/language-server'
-
-local vue_plugin = {
-  name = '@vue/typescript-plugin',
-  location = vue_language_server_path,
-  languages = { 'vue' },
-  configNamespace = 'typescript',
-}
+local vue_typescript_plugin_path = vim.fn.stdpath('data')
+    .. '/mason/packages/vue-language-server/node_modules/@vue/language-server/node_modules/@vue/typescript-plugin'
 
 local opts = {
-  cmd = { "typescript-language-server", "--stdio" },
-  filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
   init_options = {
-    hostInfo = "neovim",
     plugins = {
-      vue_plugin,
-    }
+      {
+        name = '@vue/typescript-plugin',
+        location = vue_typescript_plugin_path,
+        languages = { 'vue' },
+      },
+    },
   },
-  root_markers = { "tsconfig.json", "jsconfig.json", "package.json", ".git" }
+  filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+  single_file_support = true,
 }
-
 return opts
