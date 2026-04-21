@@ -18,7 +18,7 @@ return {
     scope = { enabled = false },
     scroll = { enabled = false },
     statuscolumn = { enabled = false },
-    words = { enabled = false },
+    words = { enabled = true },
   },
   keys = {
     { "<leader>,",  function() Snacks.picker.buffers() end,         desc = "Buffers" },
